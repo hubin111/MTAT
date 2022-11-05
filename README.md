@@ -1,6 +1,6 @@
 # BTRA
-Robustness and Accuracy Could Be Reconcilable by (Proper) Definition
-Code for the paper Robustness and Accuracy Could Be Reconcilable by (Proper) Definition (ICML 2022).
+BTRA: Boosting Adversarial Defenses by Breaking Trade-offs between Robustness and Accuracy
+Code for the paper BTRA: Boosting Adversarial Defenses by Breaking Trade-offs between Robustness and Accuracy.
 
 Environment settings and libraries we used in our experiments
 This project is tested under the following environment settings:
