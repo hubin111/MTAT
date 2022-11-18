@@ -24,7 +24,7 @@ CIFAR-100	  |DDPM	1M	npz
 SVHN	      |DDPM	1M	npz
 ## Training Commands
 ### To run the KL-based baselines (with 1M DDPM generated data), an example is:
-
+```
 $python train-wa.py --data-dir 'cifar-data' \
     --log-dir 'trained_models' \
     --desc 'WRN28-10Swish_cifar10s_lr0p2_TRADES5_epoch400_bs512_fraction0p7_ls0p1' \
@@ -37,11 +37,11 @@ $python train-wa.py --data-dir 'cifar-data' \
     --unsup-fraction 0.7 \
     --aux-data-filename 'cifar10_ddpm.npz' \
     --ls 0.1
-   
+ ```  
 Here --ls 0.1 is inherent from the the code implementation of Rebuffi et al., 2021.
 
 ## To run our methods (with 1M DDPM generated data), an example is:
-
+```
 python train-wa.py --data-dir 'cifar-data' \
     --log-dir 'trained_models' \
     --desc 'WRN28-10Swish_cifar10s_lr0p2_TRADES4_epoch400_bs512_fraction0p7_LSE' \
@@ -54,6 +54,7 @@ python train-wa.py --data-dir 'cifar-data' \
     --unsup-fraction 0.7 \
     --aux-data-filename 'cifar10_ddpm.npz' \
     --LSE --ls 0
+```
 Here we only need to activate the flag --LSE and set --ls 0.
 
 ## Pretrained checkpoints
