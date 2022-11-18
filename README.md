@@ -18,10 +18,12 @@ The codes are modifed based on the PyTorch implementation of Rebuffi et al., 202
 Install or download AutoAttack:
 pip install git+https://github.com/fra31/auto-attack
 ## Download 1M DDPM generated data from the official implementation of Rebuffi et al., 2021:
-Dataset	Extra |	Size	        Link
-CIFAR-10	  |DDPM	1M	npz
-CIFAR-100	  |DDPM	1M	npz
-SVHN	      |DDPM	1M	npz
+
+|Dataset	Extra |	Size	     |   Link
+|CIFAR-10	  |DDPM	1M	npz|
+|CIFAR-100	  |DDPM	1M	npz|
+|SVHN	      |DDPM	1M	npz|
+
 ## Training Commands
 ### To run the KL-based baselines (with 1M DDPM generated data), an example is:
 ```
