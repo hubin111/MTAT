@@ -47,8 +47,8 @@ python train-wa.py --data-dir 'cifar-data' \
     --data cifar10s \
     --batch-size 512 \
     --model wrn-28-10-swish \
-    --num-adv-epochs 400 \
-    --lr 0.2 \
+    --num-adv-epochs 10 \
+    --lr 0.005 \
     --beta 4.0 \
     --unsup-fraction 0.7 \
     --aux-data-filename 'cifar10_ddpm.npz' \
@@ -63,6 +63,7 @@ CIFAR-10	WRN-28-10	88.61	61.04	checkpoint	argtxt
 CIFAR-10	WRN-70-16	89.01	63.35	checkpoint	argtxt
 CIFAR-100	WRN-28-10	63.66	31.08	checkpoint	argtxt
 CIFAR-100	WRN-70-16	65.56	33.05	checkpoint	argtxt
+
 Downloading checkpoint to trained_models/mymodel/weights-best.pt
 Downloading argtxt to trained_models/mymodel/args.txt
 Evaluation Commands
@@ -71,8 +72,11 @@ For evaluation under AutoAttack, run the command (taking our method as an exampl
 python eval-aa.py --data-dir 'cifar-data' \
     --log-dir 'trained_models' \
     --desc mymodel
-Toy demos
-To re-implement the toy demos, we could run:
 
-python toy_demo_1d.py --demo PGDAT --divergence KL --divergence_C L1
-The flag --demo refers to the objective used for training; --divergence refers to the used metric loss; --divergence_C refers to the metric calculating SCORE values.
+python eval-adv.py --data-dir 'cifar-data' \
+    --log-dir 'trained_models' \
+    --desc mymodel
+
+python eval-muti-adv.py --data-dir 'cifar-data' \
+    --log-dir 'trained_models' \
+    --desc mymodel
