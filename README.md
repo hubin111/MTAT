@@ -2,7 +2,7 @@
 BTRA: Boosting Adversarial Defenses by Breaking Trade-offs between Robustness and Accuracy
 Code for the paper BTRA: Boosting Adversarial Defenses by Breaking Trade-offs between Robustness and Accuracy.
 
-Environment settings and libraries we used in our experiments
+## Environment settings and libraries we used in our experiments
 This project is tested under the following environment settings:
 
 OS: Ubuntu 20.04.3
@@ -37,7 +37,7 @@ $python train-wa.py --data-dir 'cifar-data' \
     --unsup-fraction 0.7 \
     --aux-data-filename 'cifar10_ddpm.npz' \
     --ls 0.1
-    $
+   
 Here --ls 0.1 is inherent from the the code implementation of Rebuffi et al., 2021.
 
 To run our methods (with 1M DDPM generated data), an example is:
