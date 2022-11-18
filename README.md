@@ -5,24 +5,24 @@ Code for the paper BTRA: Boosting Adversarial Defenses by Breaking Trade-offs be
 ## Environment settings and libraries we used in our experiments
 ### This project is tested under the following environment settings:
 
-OS: Ubuntu 20.04.3
-GPU: NVIDIA A100
-Cuda: 11.1, Cudnn: v8.2
-Python: 3.9.5
-PyTorch: 1.8.0
-Torchvision: 0.9.0
-Acknowledgement
-The codes are modifed based on the PyTorch implementation of Rebuffi et al., 2021.
+OS: Ubuntu 20.04.3  
+GPU: NVIDIA A100  
+Cuda: 11.1, Cudnn: v8.2  
+Python: 3.9.5  
+PyTorch: 1.8.0  
+Torchvision: 0.9.0  
+Acknowledgement  
+The codes are modifed based on the PyTorch implementation of Rebuffi et al., 2021.  
 
 ## Requirements
-Install or download AutoAttack:
-pip install git+https://github.com/fra31/auto-attack
-## Download 1M DDPM generated data from the official implementation of Rebuffi et al., 2021:
+Install or download AutoAttack:  
+pip install git+https://github.com/fra31/auto-attack  
+## Download 1M DDPM generated data from the official implementation of Rebuffi et al., 2021:  
 
-|Dataset	Extra |	Size	     |   Link
-|CIFAR-10	  |DDPM	1M	npz|
-|CIFAR-100	  |DDPM	1M	npz|
-|SVHN	      |DDPM	1M	npz|
+|Dataset	Extra |	Size	     |   Link  
+|CIFAR-10	  |DDPM	1M	npz|  
+|CIFAR-100	  |DDPM	1M	npz|  
+|SVHN	      |DDPM	1M	npz|  
 
 ## Training Commands
 ### To run the KL-based baselines (with 1M DDPM generated data), an example is:
