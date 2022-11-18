@@ -3,7 +3,7 @@ BTRA: Boosting Adversarial Defenses by Breaking Trade-offs between Robustness an
 Code for the paper BTRA: Boosting Adversarial Defenses by Breaking Trade-offs between Robustness and Accuracy.
 
 ## Environment settings and libraries we used in our experiments
-This project is tested under the following environment settings:
+### This project is tested under the following environment settings:
 
 OS: Ubuntu 20.04.3
 GPU: NVIDIA A100
@@ -14,16 +14,16 @@ Torchvision: 0.9.0
 Acknowledgement
 The codes are modifed based on the PyTorch implementation of Rebuffi et al., 2021.
 
-Requirements
+## Requirements
 Install or download AutoAttack:
 pip install git+https://github.com/fra31/auto-attack
-Download 1M DDPM generated data from the official implementation of Rebuffi et al., 2021:
-Dataset	Extra	Size	Link
-CIFAR-10	DDPM	1M	npz
-CIFAR-100	DDPM	1M	npz
-SVHN	DDPM	1M	npz
-Training Commands
-To run the KL-based baselines (with 1M DDPM generated data), an example is:
+## Download 1M DDPM generated data from the official implementation of Rebuffi et al., 2021:
+Dataset	Extra |	Size	        Link
+CIFAR-10	  |DDPM	1M	npz
+CIFAR-100	  |DDPM	1M	npz
+SVHN	      |DDPM	1M	npz
+## Training Commands
+### To run the KL-based baselines (with 1M DDPM generated data), an example is:
 
 $python train-wa.py --data-dir 'cifar-data' \
     --log-dir 'trained_models' \
@@ -40,7 +40,7 @@ $python train-wa.py --data-dir 'cifar-data' \
    
 Here --ls 0.1 is inherent from the the code implementation of Rebuffi et al., 2021.
 
-To run our methods (with 1M DDPM generated data), an example is:
+## To run our methods (with 1M DDPM generated data), an example is:
 
 python train-wa.py --data-dir 'cifar-data' \
     --log-dir 'trained_models' \
@@ -56,7 +56,7 @@ python train-wa.py --data-dir 'cifar-data' \
     --LSE --ls 0
 Here we only need to activate the flag --LSE and set --ls 0.
 
-Pretrained checkpoints
+## Pretrained checkpoints
 Below are pretrained checkpoints of WRN-28-10 (Swish) and WRN-70-16 (Swish) with --beta=3.0:
 
 Dataset	Model	Clean	AA		
@@ -67,7 +67,7 @@ CIFAR-100	WRN-70-16	65.56	33.05	checkpoint	argtxt
 
 Downloading checkpoint to trained_models/mymodel/weights-best.pt
 Downloading argtxt to trained_models/mymodel/args.txt
-Evaluation Commands
+## Evaluation Commands
 For evaluation under AutoAttack, run the command (taking our method as an example):
 
 python eval-aa.py --data-dir 'cifar-data' \
