@@ -1,6 +1,6 @@
-# BTRA
-BTRA: Boosting Adversarial Defenses by Breaking Trade-offs between Robustness and Accuracy
-Code for the paper BTRA: Boosting Adversarial Defenses by Breaking Trade-offs between Robustness and Accuracy.
+# MTAT
+MTAT: Mitigating the Trade-off in Adversarial Training via Sample Intervention
+Code for the paper MTAT: Mitigating the Trade-off in Adversarial Training via Sample Intervention.
 
 ## Environment settings and libraries we used in our experiments
 ### This project is tested under the following environment settings:
@@ -61,12 +61,6 @@ Here we only need to activate the flag --LSE and set --ls 0.
 
 ## Pretrained checkpoints
 Below are pretrained checkpoints of WRN-28-10 (Swish) and WRN-70-16 (Swish) with --beta=3.0:
-
-Dataset	Model	Clean	AA		
-CIFAR-10	WRN-28-10	88.61	61.04	checkpoint	argtxt  
-CIFAR-10	WRN-70-16	89.01	63.35	checkpoint	argtxt  
-CIFAR-100	WRN-28-10	63.66	31.08	checkpoint	argtxt  
-CIFAR-100	WRN-70-16	65.56	33.05	checkpoint	argtxt  
 
 Downloading checkpoint to trained_models/mymodel/weights-best.pt
 Downloading argtxt to trained_models/mymodel/args.txt
