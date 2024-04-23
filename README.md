@@ -1,6 +1,6 @@
-# MTAT
-MTAT: Mitigating the Trade-off in Adversarial Training via Sample Intervention
-Code for the paper MTAT: Mitigating the Trade-off in Adversarial Training via Sample Intervention.
+# MHSI
+Boosting Adversarial Training with Mitigating Hard Sample Interference
+Code for the paper Boosting Adversarial Training with Mitigating Hard Sample Interference.
 
 ## Environment settings and libraries we used in our experiments
 ### This project is tested under the following environment settings:
